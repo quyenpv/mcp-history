@@ -1,0 +1,19 @@
+[project]
+name = "mcp-history"
+version = "0.1.0"
+description = "MCP server cho 'Ngày này năm xưa' (nguồn: lichngaytot.com)"
+dependencies = [
+    "mcp>=1.8.1",
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.14.2"
+]
+# Chỉ build 1 module duy nhất
+py-modules = ["mcp_history"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+# Lệnh này sẽ trỏ đến hàm 'main' trong file 'mcp_history.py'
+mcp-history = "mcp_history:main"
