@@ -16,7 +16,7 @@ Trong tệp cấu hình MCP Hub của bạn (ví dụ `xiaozhi-mcphub`):
 "mcpServers": {
     "history": {
       "command": "uvx",
-      "args": ["--from", "git+[https://github.com/quyenpv/mcp-history](https://github.com/quyenpv/mcp-history)", "mcp-history"]
+      "args": ["--from", "git+https://github.com/quyenpv/mcp-history", "mcp-history"]
     },
     "zingmp3": {
        ...
